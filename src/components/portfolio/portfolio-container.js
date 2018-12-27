@@ -39,7 +39,7 @@ export default class PortfolioContainer extends Component {
 
   portfolioItems() {
     return this.state.data.map(item => {
-      console.log("portfolio item", item);
+      debugger;
       return (
         <PortfolioItem
           key={item.id}
