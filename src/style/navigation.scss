@@ -13,8 +13,11 @@
     transition: 0.5s ease-in-out;
 
     a {
-      color: black;
+      color: $grey;
       text-decoration: none;
+      &:hover {
+        color: black;
+      }
     }
 
     &:hover {
