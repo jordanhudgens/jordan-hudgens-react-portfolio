@@ -4,5 +4,13 @@
 
   .portfolio-item-wrapper {
     position: relative;
+
+    .portfolio-img-background {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 350px;
+      width: 100%;
+    }
   }
 }
