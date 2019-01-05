@@ -19,7 +19,7 @@ export default class App extends Component {
     };
 
     this.handleSuccessfulLogin = this.handleSuccessfulLogin.bind(this);
-    this.handleUnSuccessfulLogin = this.handleUnSuccessfulLogin.bind(this);
+    this.handleUnsuccessfulLogin = this.handleUnsuccessfulLogin.bind(this);
   }
 
   handleSuccessfulLogin() {
@@ -28,7 +28,7 @@ export default class App extends Component {
     });
   }
 
-  handleUnSuccessfulLogin() {
+  handleUnsuccessfulLogin() {
     this.setState({
       loggedInStatus: "NOT_LOGGED_IN"
     });
@@ -40,6 +40,8 @@ export default class App extends Component {
         <Router>
           <div>
             <NavigationContainer />
+
+            <h2>{this.state.loggedInStatus}</h2>
 
             <Switch>
               <Route exact path="/" component={Home} />
