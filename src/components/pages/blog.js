@@ -33,15 +33,11 @@ class Blog extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <h2>Blog</h2>
+    const blogRecords = this.state.blogItems.map(blogItem => {
+      return <h1>{blogItem.title}</h1>;
+    });
 
-        <div>
-          <Link to="/about-me">Read more about myself</Link>
-        </div>
-      </div>
-    );
+    return <div>{blogRecords}</div>;
   }
 }
 
