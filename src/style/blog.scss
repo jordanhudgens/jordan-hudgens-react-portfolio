@@ -8,6 +8,20 @@
     flex-direction: column;
     width: 800px;
 
+    a {
+      text-decoration: none;
+      color: $teal;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        color: $dark-teal;
+      }
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+
     .featured-image-wrapper {
       img {
         margin: 15px 0px;
