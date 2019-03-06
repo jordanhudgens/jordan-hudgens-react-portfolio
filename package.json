@@ -69,6 +69,7 @@
     "react-dom": "^16.4.2",
     "react-draft-wysiwyg": "^1.13.1",
     "react-dropzone-component": "^3.2.0",
+    "react-html-parser": "^2.0.2",
     "react-modal": "^3.8.1",
     "react-redux": "5.0.6",
     "react-router": "^4.2.0",
