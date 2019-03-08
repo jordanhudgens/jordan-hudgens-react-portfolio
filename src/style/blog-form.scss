@@ -7,4 +7,9 @@
   input {
     margin-bottom: 0px;
   }
+
+  .image-uploaders {
+    @include base-grid();
+    grid-template-columns: 200px;
+  }
 }
