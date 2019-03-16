@@ -12,5 +12,22 @@
     justify-content: center;
     align-items: center;
     background-color: $offwhite;
+
+    .auth-form-wrapper {
+      @include input-element();
+      @include base-grid();
+      grid-gap: 21px;
+      padding: 42px;
+
+      .form-group {
+        display: flex;
+
+        svg {
+          font-size: 2em;
+          color: $teal;
+          margin-right: 15px;
+        }
+      }
+    }
   }
 }
